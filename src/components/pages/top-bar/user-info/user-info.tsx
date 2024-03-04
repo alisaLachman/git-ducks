@@ -25,19 +25,12 @@ export const UserInfo = memo<UserInfoProps>(function UserInfo({
         <ul className={classNames(styles.root, className)}>
             {organization && (
                 <li className={styles.detail}>
-                    <Icon className={styles.icon} name="organization" />
                     <span>{organization}</span>
                 </li>
             )}
-            {location && (
-                <li className={styles.detail}>
-                    <Icon className={styles.icon} name="location" />
-                    {location}
-                </li>
-            )}
+            {location && <li className={styles.detail}>{location}</li>}
             {email && (
                 <li className={styles.detail}>
-                    <Icon className={styles.icon} name="mail" />
                     <Link url={`mailto:${email}`} mute>
                         {email}
                     </Link>
@@ -45,7 +38,6 @@ export const UserInfo = memo<UserInfoProps>(function UserInfo({
             )}
             {url && (
                 <li className={styles.detail}>
-                    <Icon className={styles.icon} name="url" />
                     <Link url={url} mute>
                         {url}
                     </Link>
