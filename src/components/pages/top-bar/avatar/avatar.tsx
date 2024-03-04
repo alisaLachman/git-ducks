@@ -15,7 +15,11 @@ export const Avatar = memo<AvatarProps>(function Avatar({
 }) {
     return (
         <div className={classNames(styles.root, className)}>
-            <img className={styles.image} src={url} alt={username} />
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt=""
+                className={styles.imagePerson}
+            />
         </div>
     );
 });
