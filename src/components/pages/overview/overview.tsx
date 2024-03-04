@@ -1,7 +1,9 @@
 import { useContext, useMemo } from 'react';
 import { AppContext } from '../../../app.context';
 import { Contributions } from './contributions/contributions';
-import { Projects } from './projects/projects';
+import Contributions_module from './contributions/contributions.module.scss';
+import Profile_module from '../profile.module.scss';
+import Overview_module from './overview.module.scss';
 
 export interface OverviewProps {
     className?: string;
@@ -32,8 +34,7 @@ export const Overview = ({ className }: OverviewProps) => {
 
     return (
         <div className={className}>
-            {projects.length > 0 && <Projects projects={projects} />}
-
+            <p className={Overview_module.title}>Projects</p>
             <Contributions />
         </div>
     );
