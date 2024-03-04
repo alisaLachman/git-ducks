@@ -1,0 +1,13 @@
+@import '../../globals/variables.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: var(--page-gap);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}

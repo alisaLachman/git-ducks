@@ -1,0 +1,40 @@
+@import '../../../../globals/variables.scss';
+
+.root {
+    width: 215px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 8px 80px;
+    margin: 16px 0;
+    color: var(--primary-light);
+
+    background: var(--primary);
+    border: 1px solid rgba(78, 183, 245, 0.2);
+    border-radius: 30px;
+
+    box-shadow: rgba(27, 31, 36, 0.04) 0 1px 0 0;
+
+    text-align: center;
+    font-size: $medium-font-size;
+
+    font-weight: 500;
+    line-height: 20px;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background: var(--primary-dark);
+    border-color: rgba(27, 31, 36, 0.15);
+    transition-duration: 0.1s;
+}
+
+.button:active {
+    background: hsla(220, 14%, 93%, 1);
+    border-color: rgba(27, 31, 36, 0.15);
+    transition-duration: 0.1s;
+}

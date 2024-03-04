@@ -1,0 +1,12 @@
+@import '../../../../globals/variables.scss';
+
+.title {
+    font-size: $large-font-size;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    display: flex;
+}
+
+.numberOfContributes {
+    font-weight: 500;
+}

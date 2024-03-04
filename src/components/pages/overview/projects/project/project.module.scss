@@ -1,0 +1,33 @@
+@import '../../../../../globals/variables.scss';
+
+$css: #563d7c;
+$js: #f1e05a;
+$php: #4f5d95;
+$html: #e34c26;
+
+.root {
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: $small-font-size;
+    color: var(--color-text-muted);
+    background-color: rgba(172, 206, 231, 0.25);
+    gap: 4px;
+}
+
+.title {
+    font-size: $medium-font-size;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+}
+
+.description {
+    font-size: $medium-font-size;
+}

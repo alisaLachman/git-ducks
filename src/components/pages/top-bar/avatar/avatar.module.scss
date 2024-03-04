@@ -1,0 +1,19 @@
+@import '../../../../globals/variables.scss';
+
+.root {
+    display: flex;
+    width: var(--page-column-width);
+    flex-shrink: 0;
+}
+
+.image {
+    position: relative;
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    background: var(--primary-light);
+    border: 1px solid #3b8cd2;
+    border-radius: 23px;
+    box-shadow: 0 0 0 1px rgba(27, 31, 36, 0.15);
+}

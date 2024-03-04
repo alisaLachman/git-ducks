@@ -1,0 +1,27 @@
+@import '../../../../../globals/variables.scss';
+
+.root {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 12px 8px 8px 0;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.axisX {
+    padding-left: 30px;
+    margin-bottom: 8px;
+}
+
+.axisY {
+}
