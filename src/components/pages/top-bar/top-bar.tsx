@@ -19,7 +19,11 @@ export const TopBar: React.FC<TopBarProps> = ({ className, user }) => {
         'https://static.wixstatic.com/media/610b66_a9c2eb161c8d455cb7b4a4eac122ef84~mv2.jpg'; // avatar-default.jpg (240x240)
     return (
         <aside className={classNames(styles.root, className)}>
-            <Avatar url={avatar} username={user?.username} />
+            <Avatar
+                url={avatar}
+                username={user?.username}
+                rangolan="beautiful"
+            />
 
             <div className={styles.userinfo}>
                 <div className={styles.names}>

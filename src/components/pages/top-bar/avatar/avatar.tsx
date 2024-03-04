@@ -6,6 +6,7 @@ export interface AvatarProps {
     className?: string;
     url?: string;
     username?: string;
+    rangolan: string;
 }
 
 export const Avatar = memo<AvatarProps>(function Avatar({
